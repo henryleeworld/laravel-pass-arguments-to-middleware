@@ -1,4 +1,4 @@
-# Laravel 8 傳遞中介層參數
+# Laravel 9 傳遞中介層參數
 
 引入 timacdonald 的 has-parameters 套件來擴增一種特性，允許你以更類似於 PHP 的方式將參數傳遞給 Laravel 中介層。
 
@@ -22,8 +22,8 @@ $ php artisan key:generate
 ----
 
 ## 畫面截圖
-![](https://i.imgur.com/A8qv33d.png)
+![](https://i.imgur.com/xjHfY57.png)
 > 如果沒有查詢字串參數 token，視為未經授權的行為
 
-![](https://i.imgur.com/QIVo1Jx.png)
+![](https://i.imgur.com/Tms594U.png)
 > 如果有查詢字串參數 token，則可以進行首頁瀏覽

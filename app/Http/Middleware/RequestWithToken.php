@@ -23,7 +23,7 @@ class RequestWithToken
         if($isOn){
     		$token = $request->input('token');
 			if (empty($token)) {
-                return abort(403, 'Unauthorized action.');
+                return abort(403, trans('auth.unauthorized'));
 			}
     	}
 
