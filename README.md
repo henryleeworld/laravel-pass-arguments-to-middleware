@@ -1,4 +1,4 @@
-# Laravel 9 傳遞中介層參數
+# Laravel 10 傳遞中介層參數
 
 引入 timacdonald 的 has-parameters 套件來擴增一種特性，允許你以更類似於 PHP 的方式將參數傳遞給 Laravel 中介層。
 
@@ -17,13 +17,13 @@ $ composer install
 $ php artisan key:generate
 ```
 - 在瀏覽器中輸入已定義的路由 URL 來訪問，例如：http://127.0.0.1:8000。
-- 你可以登入經由 `/welcome` 並帶查詢字串參數 token 來進行首頁瀏覽。
+- 你可以登入經由 `/` 並帶查詢字串參數 token 來進行首頁瀏覽。
 
 ----
 
 ## 畫面截圖
-![](https://i.imgur.com/xjHfY57.png)
+![](https://i.imgur.com/QsodqPd.png)
 > 如果沒有查詢字串參數 token，視為未經授權的行為
 
-![](https://i.imgur.com/Tms594U.png)
+![](https://i.imgur.com/vZFgiMi.png)
 > 如果有查詢字串參數 token，則可以進行首頁瀏覽
