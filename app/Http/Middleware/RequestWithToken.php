@@ -3,7 +3,8 @@
 namespace App\Http\Middleware;
 
 use Closure;
-use Illuminate\Support\Facades\Redirect;
+use Illuminate\Http\Request;
+use Symfony\Component\HttpFoundation\Response;
 use TiMacDonald\Middleware\HasParameters;
 
 class RequestWithToken
@@ -12,13 +13,11 @@ class RequestWithToken
     use HasParameters;
 
     /**
-     * Run the request filter.
+     * Handle an incoming request.
      *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \Closure  $next
-     * @return mixed
+     * @param  \Closure(\Illuminate\Http\Request): (\Symfony\Component\HttpFoundation\Response)  $next
      */
-    public function handle($request, Closure $next, $isOn = false)
+    public function handle(Request $request, Closure $next, $isOn = false): Response
     {
         if($isOn){
     		$token = $request->input('token');
