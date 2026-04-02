@@ -9,7 +9,6 @@ use TiMacDonald\Middleware\HasParameters;
 
 class RequestWithToken
 {
-
     use HasParameters;
 
     /**
